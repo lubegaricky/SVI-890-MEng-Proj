@@ -180,13 +180,11 @@ cat("Your UTM coordinates (x [m], y [m]) are now 100% clean and ready to merge w
 #                names_to = "Variable",
 #                values_to = "Class")
 # 
-# 
 # gates %>%
 #   summarise(across(everything(), class)) %>%
 #   pivot_longer(everything(),
 #                names_to = "Variable",
 #                values_to = "Class")
-# 
 
 # ===============================
 # 'Trials'
@@ -230,7 +228,7 @@ if (!file.exists(long_file)) {
 # ------------------------------------------------------------------
 # 2. Read the cleaned data
 # ------------------------------------------------------------------
-traj <- fread(long_file, stringsAsFactors = FALSE)
+# traj <- fread(long_file, stringsAsFactors = FALSE)
 # Explanation:
 #   - fread() from data.table is much faster and more memory-efficient 
 #     than base R's read.csv() for large files like this one.
