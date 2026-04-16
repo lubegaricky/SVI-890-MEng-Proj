@@ -18,6 +18,7 @@ search() #give list of attached packages
 traj_4_4 <- "Trajectories 04-04.csv"
 getwd()
 list.files()
+
 # ------------------------------------------------
 # Step 1: Read line-by-line and merge continuation rows
 # ------------------------------------------------
@@ -137,9 +138,7 @@ cat("Your UTM coordinates (x [m], y [m]) are now 100% clean and ready to merge w
 
 # ======================================================================
 # Other trial code
-
 # Separating
-
 # traj.1 <- read.delim(file.choose(),
 #                    sep = ";",
 #                    header = TRUE,
@@ -216,7 +215,7 @@ cat("Your UTM coordinates (x [m], y [m]) are now 100% clean and ready to merge w
 # # Create final trajectory data frame
 
 library(data.table)     # For fast reading of large CSV files (fread)
-library(dplyr)          # For data manipulation (select, arrange, etc.)
+# library(dplyr)          # For data manipulation (select, arrange, etc.)
 search()
 # ------------------------------------------------------------------
 # 1. Define the input file
